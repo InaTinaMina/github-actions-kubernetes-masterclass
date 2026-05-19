@@ -26,7 +26,5 @@ jobs:
               echo "ERROR: ~/github-actions-kubernetes-masterclass/.env is missing. Create it once with DOCKERHUB_USERNAME and DB credentials."
               exit 1
             fi
-            docker compose pull
-            docker compose up -d
-            docker image prune -f
+            make up
 
